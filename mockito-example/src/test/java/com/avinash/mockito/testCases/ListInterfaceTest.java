@@ -39,7 +39,7 @@ public class ListInterfaceTest {
 	@Test(expected=RuntimeException.class)
 	public void testForException() {
 		List listMock = mock(List.class);
-		when(listMock.get(anyInt())).thenThrow(new RuntimeException("Run time exception"));//Exception
+		when(listMock.get(anyInt())).thenThrow(new RuntimeException("Run time exception"));//to Throw Exception
 		listMock.get(0);
 	}
 
